@@ -5,3 +5,15 @@
 body {
     margin: 0;
 }
+
+nav {
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 70px;
+  padding: 20px 36px;/*20px(top & bottom) 36px(left & right)*/
+}
+
+/*solves he problem of the logo stretching the entire width in safari browser */
+.nav--logo {
+    max-width: 100px;
+}
