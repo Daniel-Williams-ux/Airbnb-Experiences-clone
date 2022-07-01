@@ -7,6 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;   
 }
 
+/*start Navbar*/
 nav {
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -14,11 +15,17 @@ nav {
   padding: 20px 36px;/*20px(top & bottom) 36px(left & right)*/
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /*solves he problem of the logo stretching the entire width in safari browser */
 .nav--logo {
     max-width: 100px;
 }
+/*End Navbar*/
 
+/*Start Hero*/
 section {
     padding: 20px;
 }
@@ -39,4 +46,26 @@ section {
 
 .hero--text {
     margin-top: 0;
+}
+/*End Hero*/
+
+
+/*Start Card*/
+.card {
+    width: 175px;
+    font-size: 12px;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--star {
+    height: 14px;
 }
