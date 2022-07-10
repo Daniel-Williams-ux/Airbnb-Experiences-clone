@@ -6,25 +6,19 @@ export default function Card(props) {
     } else if (props.location === "Online") {
         badgeText = "ONLINE"
     }
-
-  /*
-    Challenge:
-    1. Display the correct text in the badge based on the logic above
-    2. Only display the badge if badgeText has a value
-    */
   
     return (
         <div className="card">
           {badgeText === 0 && <div className="card--badge">{badgeText}</div>}
-            <img src={`../images/${props.img}`}className="card--image" />
+            <img src={`../images/${props.item.img}`}className="card--image" />
             <div className="card--stats">
                 <img src="../images/star.png" className="card--star" />
-                <span>{props.rating}</span>
+                <span>{props.item.rating}</span>
                 <span className="gray">({props.reviewCount}) • </span>
                 <span className="gray">{props.location}</span>
             </div>
-            <p className="card--title">{props.title}</p>
-            <p className="card--price"><span className="bold">From ${props.price}</span> / person</p>
+            <p className="card--title">{props.item.title}</p>
+            <p className="card--price"><span className="bold">From ${props.item.price}</span> / person</p>
         </div>
     )
 }
